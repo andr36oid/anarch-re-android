@@ -1,0 +1,6 @@
+[submodule "anarch-re"]
+	path = anarch-re
+	url = https://git.sr.ht/~marcin-serwin/anarch-re
+[submodule "SDL"]
+	path = SDL
+	url = https://github.com/libsdl-org/SDL
