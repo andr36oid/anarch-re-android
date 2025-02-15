@@ -1,1 +1,0 @@
-../../../anarch-re/settings.h

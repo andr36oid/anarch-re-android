@@ -6,7 +6,7 @@ LOCAL_MODULE := main
 
 # Add your application source files here...
 LOCAL_SRC_FILES := \
-    main_sdl3.c
+    anarch-re/main_sdl3.c
 
 SDL_PATH := ../SDL  # SDL
 

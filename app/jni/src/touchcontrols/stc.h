@@ -1,1 +1,0 @@
-../../../../anarch-re/touchcontrols/stc.h

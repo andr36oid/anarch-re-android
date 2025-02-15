@@ -24,6 +24,6 @@ Possible ways to fix this:
 endif()
 
 add_library(main SHARED
-    main_sdl3.c
+    anarch-re/main_sdl3.c
 )
 target_link_libraries(main PRIVATE SDL3::SDL3)
