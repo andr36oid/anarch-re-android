@@ -40,6 +40,10 @@ android {
             jniLibs.srcDir 'libs'
         }
         externalNativeBuild {
+            exec {
+                workingDir 'jni/src/anarch-re'
+                commandLine 'make', 'assets'
+            }
             if (buildWithCMake) {
                 cmake {
                     path 'jni/CMakeLists.txt'
