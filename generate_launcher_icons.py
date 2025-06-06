@@ -6,7 +6,7 @@ BASE = 108
 
 def logo_commands(scale, bw=False):
     return [
-        f"anarch-re/assets/logo.png",
+        f"app/jni/src/anarch-re/assets/logo.qoi",
         *(
             [
                 *["-fill", "white"],
