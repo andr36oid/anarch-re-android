@@ -1,5 +1,5 @@
 
-package dev.serwin.anarchre;
+package dev.serwin.AnarchRE;
 
 import org.libsdl.app.SDLActivity;
 

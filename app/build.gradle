@@ -5,7 +5,7 @@ plugins {
 def buildWithCMake = project.hasProperty('BUILD_WITH_CMAKE');
 
 android {
-    namespace = "dev.serwin.anarchre"
+    namespace = "dev.serwin.AnarchRE"
     compileSdkVersion 35
     defaultConfig {
         minSdkVersion 21
@@ -40,10 +40,6 @@ android {
             jniLibs.srcDir 'libs'
         }
         externalNativeBuild {
-            providers.exec {
-                workingDir 'jni/src/anarch-re'
-                commandLine 'make', 'assets'
-            }
             if (buildWithCMake) {
                 cmake {
                     path 'jni/CMakeLists.txt'
