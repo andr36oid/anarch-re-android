@@ -1,0 +1,1 @@
+- Fix displayed version number
