@@ -1,1 +1,1 @@
-public domain from-scratch suckless Doom clone
+Public domain from-scratch suckless Doom clone
