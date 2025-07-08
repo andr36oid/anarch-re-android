@@ -4,7 +4,7 @@ LEGACY_BASE = 48
 BASE = 108
 
 
-def logo_commands(scale, bw=False):
+def logo_commands(scale, bw=False, splice=True):
     return [
         f"app/jni/src/anarch-re/assets/logo.qoi",
         *(
@@ -20,7 +20,7 @@ def logo_commands(scale, bw=False):
                 *["-background", "transparent"],
             ]
         ),
-        *["-splice", "1x0"],
+        *(["-splice", "1x0"] if splice else []),
         *(
             [
                 "-negate",
@@ -92,6 +92,16 @@ def generate_adaptive_icon_background(scale, output):
     )
 
 
+def generate_fastlane_icon(output):
+    subprocess.run(
+        [
+            "magick",
+            *logo_commands(2**4, splice=False),
+            output,
+        ]
+    )
+
+
 DPIS = [
     ("mdpi", 1),
     ("hdpi", 1.5),
@@ -104,6 +114,8 @@ DPIS = [
 def icon_path(dpi, suffix=""):
     return f"app/src/main/res/mipmap-{dpi}/ic_launcher{suffix}.png"
 
+
+generate_fastlane_icon("metadata/en-US/images/icon.png")
 
 for name, scale in DPIS:
     generate_legacy_icon(scale, icon_path(name))
