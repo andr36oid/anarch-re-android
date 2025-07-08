@@ -4,6 +4,8 @@ include $(CLEAR_VARS)
 
 LOCAL_MODULE := main
 
+$(shell (cd $(LOCAL_PATH)/anarch-re && make assets > /dev/null 2>&1))
+
 # Add your application source files here...
 LOCAL_SRC_FILES := \
     anarch-re/main_sdl3.c
