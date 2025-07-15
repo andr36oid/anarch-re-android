@@ -1,2 +1,10 @@
+Anarch RE is updated to z2:
+- Mouse is released while in menu
+- Language selection at runtime
+- Czech language added
+- Polish language added
+- Improved touch controls
+
+Android specific:
 - Fix displayed version number
 - Update SDL to 3.2.18
