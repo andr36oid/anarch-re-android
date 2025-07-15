@@ -1,1 +1,2 @@
 - Fix displayed version number
+- Update SDL to 3.2.18
