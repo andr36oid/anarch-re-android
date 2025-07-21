@@ -4,6 +4,10 @@ These are files needed for building an Android version of Anarch RE. For more
 information about the Anarch RE itself head over to the
 [main repository](https://git.sr.ht/~marcin-serwin/anarch-re).
 
+[<img src="https://f-droid.org/badge/get-it-on.png"
+    alt="Get it on F-Droid"
+    height="80">](https://f-droid.org/packages/dev.serwin.AnarchRE)
+
 # License
 
 Most of the files were created by the `build-scripts/create-android-project.py`
