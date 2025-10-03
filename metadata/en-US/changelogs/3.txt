@@ -1,2 +1,2 @@
 Android specific:
-- Update SDL to 3.2.20
+- Update SDL to 3.2.24
