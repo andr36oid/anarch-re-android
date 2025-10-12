@@ -1,2 +1,6 @@
+- Rumble a haptic device when no gamepad connected
+- Make the touch d-pad 8 directional
+- Improve polish translation
+
 Android specific:
 - Update SDL to 3.2.24
