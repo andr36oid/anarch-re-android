@@ -1,0 +1,2 @@
+Android specific:
+- Produce universal apk with additional architectures
