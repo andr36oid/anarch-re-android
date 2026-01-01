@@ -1,2 +1,3 @@
 Android specific:
 - Produce universal apk with additional architectures
+- Update SDL to 3.4.0
